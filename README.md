@@ -31,7 +31,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ## Project Structure（项目结构）
-### 项目采用vue-cli构建而成，并根据实际情况做了修改和调整，具体结构如下：
+### 项目采用vue-cli构建而成，并根据实际情况做了修改和调整，项目目录主要由脚手架生成和自己创建两部分组成，下面主要介绍自己创建部分，具体结构如下：
 ``` base
 [project-name]
 ├── build                                      项目构建时的配置(脚手架自动生成的目录，一般我们不需要管)
@@ -50,40 +50,40 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 │   │   │   │   ├── _variables.less            全局变量文件
 │   │   │   └── commons.less                   全局公共预处理样式文件
 │   │   └── scripts                            脚本文件目录
-│   ├── components
-│   │   ├── [component-name]
-│   │   │   ├── index.js
-│   │   │   ├── view.less
-│   │   │   └── view.vue
-│   ├── configs
-│   │   ├── index.js
-│   │   ├── lang.js
-│   │   ├── module.js
-│   │   └── status.js
-│   ├── pages
-│   │   ├── _commons
-│   │   │   ├── [commons-block-name]
-│   │   │   │   ├── index.js
-│   │   │   │   ├── view.less
-│   │   │   │   └── view.vue
-│   │   ├── _layout
-│   │   │   ├── [layout-name]
-│   │   │   │   ├── index.js
-│   │   │   │   ├── view.less
-│   │   │   │   └── view.vue
-│   │   ├── [page-name]
-│   │   │   ├── index.js
-│   │   │   ├── view.less
-│   │   │   └── view.vue
-│   ├── router
-│   │   └── index.js
-│   ├── services
-│   │   └── axios.api.js
-│   ├── utils
-│   │   ├── index.js
-│   │   └── thread.js
-│   ├── App.vue
-│   └── main.js
+│   ├── components                             项目通用组件目录
+│   │   ├── [component-name]                   组件名称
+│   │   │   ├── index.js                       组件js文件
+│   │   │   ├── view.less                      组件样式文件
+│   │   │   └── view.vue                       组件视图文件
+│   ├── configs                                开发配置目录(主要包含了我们开发中的配置、设置、状态等)
+│   │   ├── index.js                           配置主文件，包含了状态和语言的配置，以及API接口请求的相关配置
+│   │   ├── lang.js                            通用文本文字配置
+│   │   ├── module.js                          重构模块化配置，具体详见该文件内部描述
+│   │   └── status.js                          通过状态配置
+│   ├── pages                                  项目页面目录
+│   │   ├── _commons                           公共页面(视图)目录
+│   │   │   ├── [commons-block-name]           公共块(视图)名称
+│   │   │   │   ├── index.js                   公共块(视图)js文件
+│   │   │   │   ├── view.less                  公共块(视图)样式文件
+│   │   │   │   └── view.vue                   公共块(视图)文件
+│   │   ├── _layout                            通用布局目录(页面采用vue的component式布局，可以将布局结构一致，内容不一致的页面统一采用相同布局)
+│   │   │   ├── [layout-name]                  布局名称
+│   │   │   │   ├── index.js                   布局js文件
+│   │   │   │   ├── view.less                  布局样式文件
+│   │   │   │   └── view.vue                   布局视图文件
+│   │   ├── [page-name]                        (普通)页面名称
+│   │   │   ├── index.js                       页面js文件
+│   │   │   ├── view.less                      页面样式文件
+│   │   │   └── view.vue                       页面视图文件
+│   ├── router                                 路由配置目录
+│   │   └── index.js                           路由配置(包含了路由拦截)
+│   ├── services                               API接口服务配置目录
+│   │   └── axios.api.js                       接口请求配置，这里采用的是axios，包含了接口请求拦截和接口响应拦截
+│   ├── utils                                  辅助工具目录
+│   │   ├── index.js                           辅助类方法文件
+│   │   └── thread.js                          模拟线程工具文件
+│   ├── App.vue                                APP项目视图入口(脚手架生成)
+│   └── main.js                                项目js入口主文件(脚手架生成)
 ├── static
 ├── test
 ├── .babelrc
