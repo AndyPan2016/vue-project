@@ -38,6 +38,46 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ├── config
 ├── node_modules
 ├── src
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── images
+│   │   ├── less
+│   │   └── scripts
+│   ├── components
+│   │   ├── [component-name]
+│   │   │   ├── index.js
+│   │   │   ├── view.less
+│   │   │   └── view.vue
+│   ├── configs
+│   │   ├── index.js
+│   │   ├── lang.js
+│   │   ├── module.js
+│   │   └── status.js
+│   ├── pages
+│   │   ├── _commons
+│   │   │   ├── [commons-block-name]
+│   │   │   │   ├── index.js
+│   │   │   │   ├── view.less
+│   │   │   │   └── view.vue
+│   │   ├── _layout
+│   │   │   ├── [layout-name]
+│   │   │   │   ├── index.js
+│   │   │   │   ├── view.less
+│   │   │   │   └── view.vue
+│   │   ├── [page-name]
+│   │   │   ├── index.js
+│   │   │   ├── view.less
+│   │   │   └── view.vue
+│   ├── router
+│   │   └── index.js
+│   ├── services
+│   │   └── axios.api.js
+│   ├── utils
+│   │   ├── index.js
+│   │   └── thread.js
+│   ├── App.vue
+│   └── main.js
 ├── static
 ├── test
 ├── .babelrc
@@ -49,5 +89,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ├── index.html
 ├── package-lock.json
 ├── package.js
-├── README.md
+└── README.md
 ```
