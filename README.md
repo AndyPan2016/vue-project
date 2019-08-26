@@ -1,6 +1,14 @@
-# vue-project
+# vue-project(项目名称)
+# XXX公司 XXXX项目
 
+## 项目描述
 > A Vue.js project
+
+## 项目架构
+> author by AndyPan
+* less样式预编译
+* node + vue-cli 模块化
+* module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module)
 
 ## Build Setup（构建体制）
 
