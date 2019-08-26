@@ -1,10 +1,10 @@
 # vue-project(项目名称)
 # XXX公司 XXXX项目
 
-## 项目描述
+## Project Description（项目描述）
 > A Vue.js project
 
-## 项目架构
+## Project Framework（项目架构）
 > author by AndyPan
 * less样式预编译
 * node + vue-cli 模块化
