@@ -34,16 +34,22 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ### 项目采用vue-cli构建而成，并根据实际情况做了修改和调整，具体结构如下：
 ``` base
 [project-name]
-├── build
-├── config
-├── node_modules
-├── src
-│   ├── assets
-│   │   ├── css
-│   │   ├── fonts
-│   │   ├── images
-│   │   ├── less
-│   │   └── scripts
+├── build                                      项目构建时的配置(脚手架自动生成的目录，一般我们不需要管)
+├── config                                     项目配置(脚手架自动生成的目录，一般我们不需要管)
+├── node_modules                               项目的npm包
+├── src                                        项目开发目录，我们的代码都在这里面写（以下的目录将一一介绍）
+│   ├── assets                                 静态资源存放目录（包括全局和第三方的）
+│   │   ├── css                                样式文件目录
+│   │   ├── fonts                              字体文件目录
+│   │   ├── images                             图片文件目录
+│   │   ├── less                               预处理样式文件目录
+│   │   │   ├── commons                        公共预处理样式文件目录
+│   │   │   │   ├── _animate.less              动画预处理样式文件
+│   │   │   │   ├── _mixins.less               预处理样式通用函数文件
+│   │   │   │   ├── _normalize.less            全局重置样式文件
+│   │   │   │   ├── _variables.less            全局变量文件
+│   │   │   └── commons.less                   全局公共预处理样式文件
+│   │   └── scripts                            脚本文件目录
 │   ├── components
 │   │   ├── [component-name]
 │   │   │   ├── index.js
