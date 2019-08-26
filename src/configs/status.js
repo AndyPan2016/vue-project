@@ -12,4 +12,3 @@ export const Status = {
   // 用户编号
   USERNO: 'userNo'
 }
-  
