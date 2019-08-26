@@ -8,7 +8,7 @@
 > author by AndyPan
 * less样式预编译
 * node + vue-cli 模块化
-* module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module)
+* module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module.js)
 
 ## Build Setup（构建体制）
 
