@@ -36,6 +36,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 [project-name]
 ├── build                                      项目构建时的配置,一般我们不需要管(脚手架生成)
 ├── config                                     项目配置,一般我们不需要管(脚手架生成)
+├── dist                                       build目录(待发布的项目文件)
 ├── node_modules                               项目的npm包
 ├── src                                        项目开发目录，我们的代码都在这里面写（以下的目录将一一介绍）
 │   ├── assets                                 静态资源存放目录（包括全局和第三方的）
@@ -97,3 +98,16 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ├── package.json                               项目所需的模块及版本信息(脚手架生成)
 └── README.md                                  当前文件，项目的说明文件(脚手架生成)
 ```
+
+## Coding Standard（编码规范）
+* 编码中，所有命名采用驼峰命名规则
+```base
+// 首页banner
+let pageIndexBanner
+```
+* 文件命名采用小写，多个单词加中划线连接
+```base
+// 首页页面目录下的首页banner视图
+page-index/page-index-banner.vue
+```
+* 项目采用Node+gulp进行打包压缩
