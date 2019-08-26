@@ -100,10 +100,31 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 
 ## Coding Standard（编码规范）
-* 编码中，所有命名采用驼峰命名规则
+* 编码中的命名规则  
+1.js中采用驼峰命名规则
 ```base
 // 首页banner
 let pageIndexBanner
+```
+2.less中变量命名采用小写，多个单词以中划线('-')连接
+```base
+// 主色
+@primary-theme: #99ccff;
+```
+3.class命名，采用小写，多个单词以中划线('-')连接
+```base
+<!-- 主容器 -->
+<div class="page-main"></div>
+```
+4.id命名，采用小写，并以'j-'开头(表示用于js交互)，多个单词以中划线('-')连接
+```base
+<!-- 主容器 -->
+<div class="page-main" id="j-page-main"></div>
+```
+5.自定义表情属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
+```base
+<!-- 主容器 -->
+<div class="page-main" id="j-page-main" data-main="test"></div>
 ```
 * 目录及文件命名采用小写，多个单词加中划线连接([为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html))
 ```base
@@ -111,7 +132,7 @@ let pageIndexBanner
 page-index
 ├── page-index-banner.vue
 ```
-* 注释
+* 注释  
 1.文件注释，每个文件需要在顶部添加注释来描述文件类型、功能、作者、日期等信息
 ```base
 /**
