@@ -105,10 +105,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 // 首页banner
 let pageIndexBanner
 ```
-* 目录及文件命名采用小写，多个单词加中划线连接[为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html)
+* 目录及文件命名采用小写，多个单词加中划线连接([为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html))
 ```base
 // 首页页面目录下的首页banner视图
-page-index/page-index-banner.vue
+page-index
+├── page-index-banner.vue
 ```
 * 注释
 1.文件注释，每个文件需要在顶部添加注释来描述文件类型、功能、作者、日期等信息
