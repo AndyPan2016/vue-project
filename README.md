@@ -100,40 +100,40 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 
 ## Coding Standard（编码规范）
-* 编码中的命名规则  
-1.js中采用驼峰命名规则
+### 1.编码中的命名规则
+1).js中采用驼峰命名规则
 ```base
 // 首页banner
 let pageIndexBanner
 ```
-2.less中变量命名采用小写，多个单词以中划线('-')连接
+2).less中变量命名采用小写，多个单词以中划线('-')连接
 ```base
 // 主色
 @primary-theme: #99ccff;
 ```
-3.class命名，采用小写，多个单词以中划线('-')连接
+c.class命名，采用小写，多个单词以中划线('-')连接
 ```base
 <!-- 主容器 -->
 <div class="page-main"></div>
 ```
-4.id命名，采用小写，并以'j-'开头(表示用于js交互)，多个单词以中划线('-')连接
+3).id命名，采用小写，并以'j-'开头(表示用于js交互)，多个单词以中划线('-')连接
 ```base
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main"></div>
 ```
-5.自定义表情属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
+4).自定义表情属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
 ```base
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main" data-main="test"></div>
 ```
-* 目录及文件命名采用小写，多个单词加中划线连接([为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html))
+### 2.目录及文件命名采用小写，多个单词加中划线连接([为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html))
 ```base
 // 首页页面目录下的首页banner视图
 page-index
 ├── page-index-banner.vue
 ```
-* 注释  
-1.文件注释，每个文件需要在顶部添加注释来描述文件类型、功能、作者、日期等信息
+### 3.注释
+1).文件注释，每个文件需要在顶部添加注释来描述文件类型、功能、作者、日期等信息
 ```base
 /**
  * 文件注释（JS、LESS）
@@ -150,7 +150,7 @@ page-index
  * @remark 注释及备注
 -->
 ```
-2.多行注释，一般用于描述代码块，每一段必要的代码都需要加上注释
+2).多行注释，一般用于描述代码块，每一段必要的代码都需要加上注释
 ```base
 /**
  * 多行注释（JS、LESS）
@@ -159,12 +159,12 @@ page-index
  * 多行注释（vue视图）
 -->
 ```
-3.单行注释，单个变量、属性需加上必要的注释说明
+3).单行注释，单个变量、属性需加上必要的注释说明
 ```base
 // 单行注释（JS、LESS）
 <!-- 单行注释（vue视图） -->
 ```
-4.函数注释，每一个函数都需要加上必要的说明，包括参数、类型以及返回值
+4).函数注释，每一个函数都需要加上必要的说明，包括参数、类型以及返回值
 ```base
 /**
  * 函数功能描述
