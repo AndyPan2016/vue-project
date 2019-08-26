@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 头部 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年8月21日13:56:30
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.page-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @headerHeight;
+}
+.page-main-mobile{
+	.page-header{
+		display: none;
+	}
+}
