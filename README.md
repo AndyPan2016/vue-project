@@ -105,9 +105,52 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 // 首页banner
 let pageIndexBanner
 ```
-* 文件命名采用小写，多个单词加中划线连接
+* 目录及文件命名采用小写，多个单词加中划线连接[为什么文件名要小写](http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html)
 ```base
 // 首页页面目录下的首页banner视图
 page-index/page-index-banner.vue
 ```
-* 项目采用Node+gulp进行打包压缩
+* 注释
+1.文件注释，每个文件需要在顶部添加注释来描述文件类型、功能、作者、日期等信息
+```base
+/**
+ * 文件注释（JS、LESS）
+ * @author AndyPan
+ * @createdate 2019年8月26日14:50:33
+ * @lastupdatedate 2019年8月26日14:50:37
+ * @remark 注释及备注
+ */
+<!--
+ * 文件注释（vue视图）
+ * @author AndyPan
+ * @createdate 2019年8月26日14:50:33
+ * @lastupdatedate 2019年8月26日14:50:37
+ * @remark 注释及备注
+-->
+```
+2.多行注释，一般用于描述代码块，每一段必要的代码都需要加上注释
+```base
+/**
+ * 多行注释（JS、LESS）
+ */
+<!--
+ * 多行注释（vue视图）
+-->
+```
+3.单行注释，单个变量、属性需加上必要的注释说明
+```base
+// 单行注释（JS、LESS）
+<!-- 单行注释（vue视图） -->
+```
+4.函数注释，每一个函数都需要加上必要的说明，包括参数、类型以及返回值
+```base
+/**
+ * 函数功能描述
+ * @param {Object(参数数据类型)} params.参数描述
+ * @returns {Boolean(返回值数据类型)} 返回值描述
+ */
+let test = function (params) {
+    return false
+}
+```
+
