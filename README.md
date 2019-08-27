@@ -7,42 +7,9 @@
 ## Project Framework（项目架构）
 > author by AndyPan
 * less样式预编译
-* node + vue-cli 模块化
+* node + vue-cli模块化
+> webpack模块打包  vue-router路由处理  axios XMLHttpRequests请求  eslint语法检测  e2e、unit测试
 * module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module.js)
-```base
-// 配置规则
-let modulesConfigs = {
-  [src下的目录名称,首字母大写]: {
-    // 目录路径
-    path: '目录路径',
-    // 目录下的文件名
-    fileName: { test: 'test.js' }
-  },
-  ...
-}
-// 举例
-let modulesConfigs = {
-  // utils工具
-  Utils: {
-    // 目录路径
-    path: 'utils/',
-    // 目录下的文件名
-    fileName: { test: 'test.js' }
-  },
-  // 公共页面
-  PagesCommons: {
-    // 目录路径
-    path: 'pages/_commons/',
-    // 目录下的文件名
-    fileName: { footer: 'footer', header: 'header', welcome: 'welcome' }
-  }
-}
-```
-```base
-// 引用规则
-let test = Utils.require(Utils.test)
-let footer = PagesCommons.use(PagesCommons.footer)
-```
 
 ## Build Setup（构建体制）
 
