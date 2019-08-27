@@ -8,13 +8,11 @@
 > author by AndyPan
 * less样式预编译
 * node + vue-cli模块化
-```base
-1.[webpack模块打包](https://www.webpackjs.com/)
-2.[vue-router路由处理](https://www.runoob.com/vue2/vue-routing.html)
-3.[axios XMLHttpRequests请求](http://www.axios-js.com/)
-4.[eslint语法检测](https://cn.eslint.org/)
-5.[e2e](https://blog.csdn.net/iceice_L/article/details/89359670)(采用[nightwatch](https://nightwatchjs.org/api/)框架)、unit(采用[jest](https://www.jianshu.com/p/70a4f026a0f1?utm_source=oschina-app))测试
-```
+   1.[webpack模块打包](https://www.webpackjs.com/)
+   2.[vue-router路由处理](https://www.runoob.com/vue2/vue-routing.html)
+   3.[axios XMLHttpRequests请求](http://www.axios-js.com/)
+   4.[eslint语法检测](https://cn.eslint.org/)
+   5.[e2e](https://blog.csdn.net/iceice_L/article/details/89359670)(采用[nightwatch](https://nightwatchjs.org/api/)框架)、unit(采用[jest](https://www.jianshu.com/p/70a4f026a0f1?utm_source=oschina-app))测试
 * module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module.js)
 
 ## Build Setup（构建体制）
