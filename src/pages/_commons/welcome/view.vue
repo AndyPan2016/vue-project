@@ -7,10 +7,6 @@
 <template>
     <div class="welcome">
       Welcome
-      <Checkbox text="复选框" :onClick="onClick" />
-      <Checkbox type="radio" :onClick="onClick" name="radioGroup" />
-      <Checkbox type="radio" :onClick="onClick" name="radioGroup" />
-      <Checkbox type="radio" :onClick="onClick" :checked="true" text="默认值" name="radioGroup" />
     </div>
 </template>
 

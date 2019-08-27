@@ -4,7 +4,7 @@
  * @date    2018-08-14 10:23:48
  */
 
-module.exports = {
+export const utils = {
   isTrue (attr) {
     return (attr === true || attr === 'true') ? 1 : 0
   },
@@ -63,6 +63,17 @@ module.exports = {
         }
       }
       return status
+    }
+  },
+  isMobile () {
+    return navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+  },
+  isWeixin () {
+    var ua = navigator.userAgent.toLowerCase()
+    if (ua.match(/MicroMessenger/i) === 'micromessenger') {
+      return true
+    } else {
+      return false
     }
   },
   // 获取Url地址的参数

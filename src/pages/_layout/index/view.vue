@@ -9,8 +9,10 @@
         <Header />
         <div class="page-cont-body">
             <div class="page-body-nav active">
-                <router-link class="nav-item" :to="pageRoutes.pageA">Page A</router-link>
-                <router-link class="nav-item" :to="pageRoutes.pageB">Page B</router-link>
+                <router-link class="nav-item" :to="pageRoutes.pageCheckBox">选择框</router-link>
+                <router-link class="nav-item" :to="pageRoutes.pagePopup">弹出框</router-link>
+                <router-link class="nav-item" :to="pageRoutes.pageSwitchBox">SwitchBox</router-link>
+                <router-link class="nav-item" :to="pageRoutes.pageTabs">选项卡</router-link>
             </div>
             <div class="page-body-cont">
                 <component v-bind:is="currentComponent"></component>

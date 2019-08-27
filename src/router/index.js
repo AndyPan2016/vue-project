@@ -13,7 +13,7 @@ const routes = [
     component: IndexPage
   },
   {
-    path: Pages.route(':type'),
+    path: PagesComponentDemo.route(':type'),
     name: 'IndexPageByType',
     component: IndexPage
   }

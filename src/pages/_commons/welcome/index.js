@@ -4,21 +4,12 @@
  * @date    2019年8月21日14:04:05
  */
 
-let Checkbox = Components.use(Components.checkbox)
-
 let render = {
   data () {
-    return {
-    }
+    return {}
   },
-  methods: {
-    onClick (e, status) {
-      console.info(status)
-    }
-  },
-  components: {
-    Checkbox
-  }
+  methods: {},
+  components: {}
 }
 
 export {

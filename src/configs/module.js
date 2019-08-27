@@ -48,7 +48,7 @@
     // 组件
     Components: {
       path: 'components/',
-      fileName: { checkbox: 'checkbox', popup: 'popup', tabs: 'tabs' }
+      fileName: { checkbox: 'checkbox', popup: 'popup', tabs: 'tabs', switchbox: 'switchbox' }
     },
     // 配置
     Configs: {
@@ -68,6 +68,11 @@
       path: 'pages/_layout/',
       route: true,
       fileName: { index: 'index' }
+    },
+    // 组件demo
+    PagesComponentDemo: {
+      path: 'pages/component-demo/',
+      route: true
     },
     // 路由
     Router: { path: 'router/' },

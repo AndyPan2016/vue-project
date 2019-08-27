@@ -14,15 +14,17 @@ let render = {
     return {
       currentComponent: Welcome,
       pageRoutes: {
-        pageA: { path: Pages.route('a') },
-        pageB: { path: Pages.route('b') }
+        pageCheckBox: { path: PagesComponentDemo.route('checkbox') },
+        pagePopup: { path: PagesComponentDemo.route('popup') },
+        pageSwitchBox: { path: PagesComponentDemo.route('switchbox') },
+        pageTabs: { path: PagesComponentDemo.route('tabs') }
       }
     }
   },
   methods: {
     renderComponent () {
       let type = this.$route.params['type']
-      this.currentComponent = type ? Pages.use(type) : Welcome
+      this.currentComponent = type ? PagesComponentDemo.use(type) : Welcome
     }
   },
   components: {

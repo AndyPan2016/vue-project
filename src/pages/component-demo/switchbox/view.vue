@@ -6,7 +6,7 @@
 
 <template>
     <div class="page-main">
-      page A
+      <SwitchBox :onSwitch="onSwitch" :checked="true" dataId="id1" />
     </div>
 </template>
 

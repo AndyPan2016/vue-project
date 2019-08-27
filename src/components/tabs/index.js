@@ -4,8 +4,7 @@
  * @date    2018年8月21日15:51:13
  */
 
-// import utils from '@/utils'
-let utils = Utils.require()
+let { utils } = Utils.require()
 
 let render = {
   data () {
