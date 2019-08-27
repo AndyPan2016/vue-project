@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 let IndexPage = PagesLayout.use(PagesLayout.index)
+let NotFound = PagesCommons.use(PagesCommons['404'])
 
 Vue.use(Router)
 
@@ -16,7 +17,9 @@ const routes = [
     path: PagesComponentDemo.route(':type'),
     name: 'IndexPageByType',
     component: IndexPage
-  }
+  },
+  // 404
+  { path: '*', component: NotFound }
 ]
 
 // 创建router对路由进行管理，由构造函数 new Router()创建，接收routes参数

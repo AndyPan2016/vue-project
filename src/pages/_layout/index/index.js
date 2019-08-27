@@ -14,10 +14,10 @@ let render = {
     return {
       currentComponent: Welcome,
       pageRoutes: {
-        pageCheckBox: { path: PagesComponentDemo.route('checkbox') },
-        pagePopup: { path: PagesComponentDemo.route('popup') },
-        pageSwitchBox: { path: PagesComponentDemo.route('switchbox') },
-        pageTabs: { path: PagesComponentDemo.route('tabs') }
+        pageCheckBox: { path: PagesComponentDemo.route(PagesComponentDemo.checkbox) },
+        pagePopup: { path: PagesComponentDemo.route(PagesComponentDemo.popup) },
+        pageSwitchBox: { path: PagesComponentDemo.route(PagesComponentDemo.switchbox) },
+        pageTabs: { path: PagesComponentDemo.route(PagesComponentDemo.tabs) }
       }
     }
   },

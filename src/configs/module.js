@@ -61,7 +61,7 @@
     PagesCommons: {
       path: 'pages/_commons/',
       route: true,
-      fileName: { footer: 'footer', header: 'header', welcome: 'welcome' }
+      fileName: { footer: 'footer', header: 'header', welcome: 'welcome', 404: '404' }
     },
     // 页面布局
     PagesLayout: {
@@ -72,7 +72,8 @@
     // 组件demo
     PagesComponentDemo: {
       path: 'pages/component-demo/',
-      route: true
+      route: true,
+      fileName: { checkbox: 'checkbox', popup: 'popup', switchbox: 'switchbox', tabs: 'tabs' }
     },
     // 路由
     Router: { path: 'router/' },
