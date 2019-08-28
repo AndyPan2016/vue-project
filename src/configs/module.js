@@ -228,11 +228,46 @@
       if (suffix !== 'vue') {
         myModule = require('@/' + path)
       } else {
-        myModule = () => import('@/' + path)
+        let isIn = checkInFile(moduleName, modulesConfigs[key], path)
+        if (!isIn) {
+          return onNotInFile(moduleName, path)
+        } else {
+          myModule = () => import('@/' + path)
+        }
       }
       setCache(key, moduleName, myModule, isCache)
     }
     return myModule
+  }
+
+  /**
+   * 检查引用的文件或模块是否存在(只有引用.vue的文件才会判断)
+   * @param {String} name 名称
+   * @returns {Boolean} true.存在 false.不存在
+   */
+  let checkInFile = (name, configItem) => {
+    let fileName = configItem.fileName
+    let isIn = false
+    for (let key in fileName) {
+      if (fileName[key] === name) {
+        isIn = true
+        break
+      }
+    }
+
+    return isIn
+  }
+
+  /**
+   * 没找到模块的操作
+   * @param {String} name 模块名称
+   * @param {String} path 模块路径
+   */
+  let onNotInFile = (name, path) => {
+    console.info(name)
+    console.info(path)
+    let NotFound = PagesCommons.use(PagesCommons['404'])
+    return NotFound
   }
 
   renderConfigs()
