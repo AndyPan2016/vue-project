@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { utils } from './utils'
 // 兼容IE Promise(安装、导入并调用即可)
 import Promise from 'es6-promise'
 Promise.polyfill()
@@ -16,3 +17,7 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+for (let key in utils) {
+  Vue.prototype[key] = utils[key]
+}

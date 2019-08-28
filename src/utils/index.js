@@ -76,6 +76,14 @@ export const utils = {
       return false
     }
   },
+  setWebSiteTitle (title) {
+    if (title) {
+      let websiteTarget = document.getElementById('j-website-title')
+      if (websiteTarget) {
+        websiteTarget.innerHTML = title
+      }
+    }
+  },
   // 获取Url地址的参数
   queryUrl (url, name) {
     // 获取url中"?"符后的字串
