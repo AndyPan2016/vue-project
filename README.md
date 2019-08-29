@@ -139,7 +139,7 @@ c.class命名，采用小写，多个单词以中划线('-')连接
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main"></div>
 ```
-4).自定义表情属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
+4).自定义标签属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
 ```base
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main" data-main="test"></div>
