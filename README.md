@@ -10,9 +10,10 @@
 * node + vue-cli模块化  
    1.[webpack模块打包](https://www.webpackjs.com/)  
    2.[vue-router路由处理](https://www.runoob.com/vue2/vue-routing.html)  
-   3.[axios XMLHttpRequests请求](http://www.axios-js.com/)  
-   4.[eslint语法检测](https://cn.eslint.org/)  
-   5.[e2e](https://blog.csdn.net/iceice_L/article/details/89359670)(采用[nightwatch](https://nightwatchjs.org/api/)框架)、unit(采用[jest](https://www.jianshu.com/p/70a4f026a0f1?utm_source=oschina-app))测试
+   3.[vuex状态管理](https://vuex.vuejs.org/zh/)  
+   4.[axios XMLHttpRequests请求](http://www.axios-js.com/)  
+   5.[eslint语法检测](https://cn.eslint.org/)  
+   6.[e2e](https://blog.csdn.net/iceice_L/article/details/89359670)(采用[nightwatch](https://nightwatchjs.org/api/)框架)、unit(采用[jest](https://www.jianshu.com/p/70a4f026a0f1?utm_source=oschina-app))测试
 * module assist模块辅助加载，方便后期项目结构调整(具体配置，详见：src/configs/module.js)
 
 ## Build Setup（构建体制）
@@ -93,6 +94,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 │   │   └── index.js                           # 路由配置(包含了路由拦截)
 │   ├── services                               # API接口服务配置目录
 │   │   └── axios.api.js                       # 接口请求配置，这里采用的是axios，包含了接口请求拦截和接口响应拦截
+│   ├── store                                  # Vuex状态管理Store目录
+│   │   ├── modules                            # Store模块目录
+│   │   │   ├── [test].js                      # Store模块js文件
+│   │   └── index.js                           # Vuex实例及状态配置
 │   ├── utils                                  # 辅助工具目录
 │   │   ├── index.js                           # 辅助类方法文件
 │   │   └── thread.js                          # 模拟线程工具文件

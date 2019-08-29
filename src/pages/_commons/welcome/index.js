@@ -8,7 +8,12 @@ let render = {
   data () {
     return {}
   },
-  methods: {},
+  methods: {
+    updateState () {
+      // this.$store.commit('update')
+      this.$store.dispatch('update', {dispatch: 'test'})
+    }
+  },
   components: {}
 }
 

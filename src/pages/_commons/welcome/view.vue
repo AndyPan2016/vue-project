@@ -7,6 +7,9 @@
 <template>
     <div class="welcome">
       Welcome
+      <!-- {{this.$store.state.testModule.test}}
+      ({{this.$store.getters.getStateTest}}) -->
+      <button @click="updateState">修改状态</button>
     </div>
 </template>
 

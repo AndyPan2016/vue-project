@@ -130,6 +130,9 @@ let render = {
   },
   components: {
     Popup
+  },
+  created () {
+    this.setWebSiteTitle('弹出框')
   }
 }
 

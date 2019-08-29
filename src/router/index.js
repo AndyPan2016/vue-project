@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 let IndexPage = PagesLayout.use(PagesLayout.index)
 let NotFound = PagesCommons.use(PagesCommons['404'])
+// let Welcome = PagesCommons.use(PagesCommons.welcome)
 
 Vue.use(Router)
 
@@ -11,7 +12,11 @@ const routes = [
   {
     path: '/',
     name: 'IndexPage',
-    component: IndexPage
+    component: IndexPage,
+    children: [
+      // 路由嵌套测试
+      { path: '/abc', component: NotFound }
+    ]
   },
   {
     path: PagesComponentDemo.route(':type'),

@@ -79,6 +79,13 @@
     Router: { path: 'router/' },
     // 服务
     Services: { path: 'services/' },
+    // vuex store
+    Store: { path: 'store/' },
+    // vuex store模块
+    StoreModules: {
+      path: 'store/modules/',
+      fileName: { test: 'test.js' }
+    },
     // Utils工具
     Utils: {
       path: 'utils/',

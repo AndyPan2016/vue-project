@@ -15,7 +15,10 @@
                 <router-link class="nav-item" :to="pageRoutes.pageTabs">选项卡</router-link>
             </div>
             <div class="page-body-cont">
+                <!-- 自定义动态组件渲染使用 -->
                 <component v-bind:is="currentComponent"></component>
+                <!-- 路由嵌套使用 -->
+                <router-view></router-view>
             </div>
         </div>
         <Footer />

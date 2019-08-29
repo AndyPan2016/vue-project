@@ -23,6 +23,7 @@ let render = {
     Tabs
   },
   created () {
+    this.setWebSiteTitle('选项卡')
   }
 }
 

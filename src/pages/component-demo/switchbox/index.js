@@ -17,6 +17,9 @@ let render = {
   },
   components: {
     SwitchBox
+  },
+  created () {
+    this.setWebSiteTitle('切换框')
   }
 }
 

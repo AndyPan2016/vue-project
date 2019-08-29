@@ -17,6 +17,9 @@ let render = {
   },
   components: {
     Checkbox
+  },
+  created () {
+    this.setWebSiteTitle('选择框')
   }
 }
 

@@ -7,6 +7,7 @@
 <template>
     <div class="page-header">
       Header
+      (Store 状态：{{this.$store.state.testModule.test}})
     </div>
 </template>
 
