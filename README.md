@@ -7,7 +7,7 @@
 ## Project Framework（项目架构）
 > author by AndyPan
 * less样式预编译
-* node + vue-cli模块化  
+* node + vue-cli(2.9.6)模块化  
    1.[webpack模块打包](https://www.webpackjs.com/)  
    2.[vue-router路由处理](https://www.runoob.com/vue2/vue-routing.html)  
    3.[vuex状态管理](https://vuex.vuejs.org/zh/)  
