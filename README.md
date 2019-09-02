@@ -53,7 +53,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ├── dist                                       # build目录(待发布的项目文件)
 ├── node_modules                               # 项目的npm包
 ├── src                                        # 项目开发目录，我们的代码都在这里面写（以下的目录将一一介绍）
-│   ├── assets                                 # 静态资源存放目录（包括全局和第三方的）
+│   ├── assets                                 # 静态资源存放目录（项目全局）
 │   │   ├── css                                # 样式文件目录
 │   │   ├── fonts                              # 字体文件目录
 │   │   ├── images                             # 图片文件目录
@@ -103,7 +103,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 │   │   └── thread.js                          # 模拟线程工具文件
 │   ├── App.vue                                # APP项目视图入口(脚手架生成)
 │   └── main.js                                # 项目js入口主文件(脚手架生成)
-├── static                                     # 静态资源目录，脚手架为我们生成的，但我们一般放在src目录下，因为所有我们自己创建的文件都在src目录下面(脚手架生成，可删除)
+├── static                                     # 静态资源目录，如如图片、视频或者第三方样式或js等不需要编译的资源都可放在这里(脚手架生成)
 ├── test                                       # 测试目录(脚手架生成，可删除)
 ├── .babelrc                                   # babel语法编译配置，浏览器的版本和兼容性问题，很多js的新方法和特性的使用都受到了限制。使用babel可以将代码中js代码编译成兼容绝大多数主流浏览器的代码(脚手架生成)
 ├── .editorconfig                              # 编辑器配置，帮助开发人员在不同的编辑器和IDE之间定义和维护一致的编码样式(脚手架生成)
