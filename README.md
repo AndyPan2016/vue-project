@@ -119,27 +119,32 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## Coding Standard（编码规范）
 ### 1.编码中的命名规则
-1).js中采用驼峰命名规则
+1).js中常规采用驼峰命名规则
 ```base
 // 首页banner
 let pageIndexBanner
 ```
-2).less中变量命名采用小写，多个单词以中划线('-')连接
+2).js中引用组件采用大写开头命名规则
+```base
+// 弹出框组件
+let Popup = Components.use(Components.popup)
+```
+3).less中变量命名采用小写，多个单词以中划线('-')连接
 ```base
 // 主色
 @primary-theme: #99ccff;
 ```
-c.class命名，采用小写，多个单词以中划线('-')连接
+4).class命名，采用小写，多个单词以中划线('-')连接
 ```base
 <!-- 主容器 -->
 <div class="page-main"></div>
 ```
-3).id命名，采用小写，并以'j-'开头(表示用于js交互)，多个单词以中划线('-')连接
+5).id命名，采用小写，并以'j-'开头(表示用于js交互)，多个单词以中划线('-')连接
 ```base
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main"></div>
 ```
-4).自定义标签属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
+6).自定义标签属性，Html5规范中规定自定义属性需要添加前缀data-,目的是提供与渲染无关的信息
 ```base
 <!-- 主容器 -->
 <div class="page-main" id="j-page-main" data-main="test"></div>
